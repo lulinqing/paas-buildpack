@@ -37,8 +37,8 @@ Change directory to your application and optionally copy over the
 StrongLoop sample configuration
 
     cd slnode
-    git add strongloop
-    git commit . -m 'Added StrongLoop config files'
+    git add .
+    git commit -m 'Added StrongLoop config files'
 
 And when you are satisfied that all's ok, just push your app to Heroku:
 
