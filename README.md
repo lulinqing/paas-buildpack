@@ -37,7 +37,6 @@ Change directory to your application and optionally copy over the
 StrongLoop sample configuration
 
     cd slnode
-    cp -r $buildpackdir/samples/strongloop .
     git add strongloop
     git commit . -m 'Added StrongLoop config files'
 
