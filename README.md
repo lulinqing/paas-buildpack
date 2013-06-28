@@ -6,7 +6,7 @@ StrongLoop Node as a runtime "service" on a few different PaaS
 environments. Currently supported PaaS environments are:
 
     SalesForce's Heroku
-    VMWare's CloudFoundry
+    Pivotal's Cloud Foundry
 
 Okay, now onto how to use this buildpack.
 
@@ -54,16 +54,16 @@ That's it, you can now checkout your StrongLoop Node application at the
 app url/domain returned from the heroku apps:create command.
     
 
-Deploying on CloudFoundry:
+Deploying on Cloud Foundry:
 --------------------------
 
-Create an account on http://cloudfoundry.com/
+Create an account on http://run.pivotal.io/
 
 Install the cf command line tools
 
      sudo gem install cf
      
-Login into the CloudFoundry PaaS:
+Login into the Cloud Foundry PaaS:
 
      cf login
 
@@ -73,24 +73,24 @@ Clone or create your application:
      # OR  git clone ${path_to_your_awesome_app}.git slnode
      # OR  cp -r ~/myapp/*  slnode
 
-And when you are satisfied that all's ok, push your app to CloudFoundry.
+And when you are satisfied that all's ok, push your app to Cloud Foundry.
 
     cf push slnode --buildpack=git://github.com/lulinqing/paas-buildpack.git
 
 Note:  The first time you run cf push, you will need to specify all the
-       parameters - this will create a new application at CloudFoundry.
-       domain `example: slnode-app.cloudfoundry.com`.
+       parameters - this will create a new application at Cloud Foundry.
+       domain `example: slnode.cfapps.io`.
        And save the configuration `example: y`.
 
 Subsequent pushes just need the `cf push` command - you only need to
 specify all those options the first time you create the app (push).
 
-This will now download and configure StrongLoop Node on CloudFoundry,
+This will now download and configure StrongLoop Node on Cloud Foundry,
 install the dependencies as specified in the sample application's
 package.json file (or npm-shrinkwrap.json if one exists).
 
 That's it, you can now checkout your StrongLoop Node application at the
-app url/domain you set for your CloudFoundry app.
+app url/domain you set for your Cloud Foundry app.
 
 
     Copy StrongLoop Node configuration files [OPTIONAL]
