@@ -59,7 +59,8 @@ Deploying on Cloud Foundry:
 
 Create an account on http://run.pivotal.io/
 
-Install the cf command line tools
+Install the cf command line tools, and check their office CLI guide here:
+http://docs.cloudfoundry.com/docs/using/managing-apps/cf/
 
      sudo gem install cf
      
