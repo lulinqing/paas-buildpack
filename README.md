@@ -29,14 +29,14 @@ Login into the Heroku:
 
 Clone the sample application or create your application:
 
-     git clone git://github.com/strongloop/dist-paas-quickstart.git slnode
-     # OR  git clone ${path_to_your_awesome_app}.git slnode
-     # OR  cp -r ~/myapp/*  slnode
+     git clone git://github.com/lulinqing/dist-paas-quickstart.git strongloop
+     # OR  git clone ${path_to_your_awesome_app}.git strongloop
+     # OR  cp -r ~/myapp/*  strongloop
 
 Change directory to your application and optionally copy over the
 StrongLoop sample configuration
 
-    cd slnode
+    cd strongloop
     git add .
     git commit -m 'Added StrongLoop config files'
 
@@ -70,17 +70,17 @@ Login into the Cloud Foundry PaaS:
 
 Clone or create your application:
 
-     git clone git://github.com/strongloop/dist-paas-quickstart.git slnode
-     # OR  git clone ${path_to_your_awesome_app}.git slnode
-     # OR  cp -r ~/myapp/*  slnode
+     git clone git://github.com/lulinqing/dist-paas-quickstart.git strongloop
+     # OR  git clone ${path_to_your_awesome_app}.git strongloop
+     # OR  cp -r ~/myapp/*  strongloop
 
 And when you are satisfied that all's ok, push your app to Cloud Foundry.
 
-    cf push slnode --buildpack=git://github.com/lulinqing/paas-buildpack.git
+    cf push strongloop --buildpack=git://github.com/lulinqing/paas-buildpack.git
 
 Note:  The first time you run cf push, you will need to specify all the
        parameters - this will create a new application at Cloud Foundry.
-       domain `example: slnode.cfapps.io`.
+       domain `example: strongloop.cfapps.io`.
        And save the configuration `example: y`.
 
 Subsequent pushes just need the `cf push` command - you only need to
