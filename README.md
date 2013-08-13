@@ -37,6 +37,7 @@ Change directory to your application and optionally copy over the
 StrongLoop sample configuration
 
     cd strongloop
+    (make some updates)
     git add .
     git commit -m 'Added StrongLoop config files'
 
