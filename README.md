@@ -29,7 +29,7 @@ Login into the Heroku:
 
 Clone the sample application or create your application:
 
-     git clone git://github.com/lulinqing/dist-paas-quickstart.git strongloop
+     git clone git://github.com/lulinqing/paas-quickstart.git strongloop
      # OR  git clone ${path_to_your_awesome_app}.git strongloop
      # OR  cp -r ~/myapp/*  strongloop
 
@@ -70,7 +70,7 @@ Login into the Cloud Foundry PaaS:
 
 Clone or create your application:
 
-     git clone git://github.com/lulinqing/dist-paas-quickstart.git strongloop
+     git clone git://github.com/lulinqing/paas-quickstart.git strongloop
      # OR  git clone ${path_to_your_awesome_app}.git strongloop
      # OR  cp -r ~/myapp/*  strongloop
 
